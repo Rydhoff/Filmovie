@@ -20,3 +20,7 @@
     color: #0f0f0f;
     transition: .3s;
 }
+
+.pagination img {
+    width: .6rem;
+}
