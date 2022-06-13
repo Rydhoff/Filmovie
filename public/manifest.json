@@ -1,0 +1,22 @@
+{
+  "short_name": "Filmovie",
+  "name": "A movie and tv list",
+  "icons": [
+    {
+      "src": "Logo.png",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "Logo.png",
+      "type": "image/png"
+    },
+    {
+      "src": "Logo.png",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

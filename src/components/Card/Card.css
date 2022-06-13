@@ -1,0 +1,26 @@
+.card-container {
+    width: 8rem;
+    height: 13.5rem;
+    border-radius: .5rem;
+    margin: 0 .5rem;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+    font-weight: unset;
+}
+
+.card-container img {
+    width: 8rem;
+    border-radius: .5rem;
+    height: 10rem;
+    object-fit: cover;
+}
+
+.card-container p {
+    margin: .5rem 0;
+    font-size: .8rem;
+    font-weight: 600;
+}

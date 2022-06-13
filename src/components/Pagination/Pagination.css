@@ -1,0 +1,22 @@
+.pagination {
+    display: flex;
+    color: white;
+    width: fit-content;
+    margin: 3rem auto;
+    font-size: .8rem;
+}
+
+.pagination div {
+    border: 1px solid white;
+    padding: .3rem .8rem;
+    margin: 0 1rem;
+    border-radius: 2rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.go:hover {
+    background-color: white;
+    color: #0f0f0f;
+    transition: .3s;
+}

@@ -1,0 +1,31 @@
+.section-container {
+    height: 50%;
+    position: relative;
+}
+
+.section-row {
+    padding: 1.5rem 0;
+}
+
+h2 {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.view {
+    position: absolute;
+    right: 1rem;
+    font-size: .8rem;
+    top: 1.5rem;
+    border: 1px solid white;
+    padding: .2rem .5rem;
+    border-radius: 1rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.view:hover {
+    background-color: white;
+    color: #0f0f0f;
+    transition: .3s;
+}
