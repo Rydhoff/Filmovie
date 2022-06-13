@@ -8,6 +8,7 @@ import axios from "axios";
 import { useParams } from "react-router-dom";
 import noImage from "../../../assets/image/noimage.png";
 import Footer from "../../../components/Footer/Footer";
+import Search from "../../../components/Search/Search";
 
 function Tv() {
     let { page } = useParams();
@@ -35,6 +36,7 @@ function Tv() {
     return (
     <div>
         <Navbar />
+        <Search type="TV" />
         <h3>All TV</h3>
         <div className="card-wrapper">
             {

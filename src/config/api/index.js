@@ -8,7 +8,7 @@ const API = {
     fetchVideo: (id) => `https://api.themoviedb.org/3/movie/${id}/videos?api_key=${apiKey}&language=null`,
     youtube: 'https://www.youtube.com/watch?v=',
     fetchDetail: (type ,id) => `https://api.themoviedb.org/3/${type}/${id}?api_key=${apiKey}`,
-    fetchSearch: (query) => `https://api.themoviedb.org/3/search/multi?api_key=${apiKey}&language=en-US&query=${query}&page=1&include_adult=false`
+    fetchSearchMovie: (query) => `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&language=en-US&query=${query}&page=1&include_adult=false`
 }
 
 export default API;

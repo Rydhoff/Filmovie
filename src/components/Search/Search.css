@@ -1,0 +1,35 @@
+.card-wrappers {
+    display: grid;
+    padding-top: 3rem;
+    grid-template-columns: repeat(auto-fill, 10rem);
+    justify-content: center;
+}
+
+input {
+    font-size: 1rem;
+    padding: .4rem 2rem;
+    width: 20rem;
+    min-height: 1rem;
+    border: unset;
+    border-radius: 2rem;
+    outline: none;
+    background-color: rgba(255, 255, 255, .1);
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+.input {
+    width: fit-content;
+    margin: auto;
+    height: 4rem;
+    padding-top: 5rem;
+    position: relative;
+}
+
+.input img {
+    position: absolute;
+    width: 1rem;
+    top: 5.5rem;
+    left: .5rem;
+}

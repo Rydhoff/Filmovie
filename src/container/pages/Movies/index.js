@@ -7,10 +7,11 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom"
 import Footer from "../../../components/Footer/Footer";
+import Search from "../../../components/Search/Search";
 
 function Movies() {
     let { page } = useParams();
-    const [movies, setMovies] = useState([])
+    const [movies, setMovies] = useState([]);
 
     useEffect(() => {
         axios.get(API.fetchMovie(page))
@@ -22,16 +23,16 @@ function Movies() {
             console.log(err);
         })
     })
-    
 
     return (
     <div>
         <Navbar />
+        <Search type="Movie" />
         <h3>All Movies</h3>
         <div className="card-wrapper">
             {
                 movies.map((movie) => {
-                return(<Card id={movie.id} key={movie.id} title={movie.title} image={API.fetchImage(movie.poster_path)}/>)
+                    return(<Card id={movie.id} key={movie.id} title={movie.title} image={API.fetchImage(movie.poster_path)}/>)
                 })
             }
         </div>
