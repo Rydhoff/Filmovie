@@ -10,21 +10,29 @@ function Pagination(props) {
 
     function next() {
         setPage(pages+1);
-        navigate(`/${props.route}/${pages}`)
+        navigate(`/${props.route}/${pages}`);
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
     }
 
     function prev() {
         if(pages > 0) {
             setPage(pages-1);
-            navigate(`/${props.route}/${pages}`)
+            navigate(`/${props.route}/${pages}`);
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth',
+            });
         }
     }
 
     return(
         <div className="pagination">
-            <div className="go" onClick={prev}><img src={left} /></div>
+            <div onClick={prev}><img src={left} /></div>
             <div>{props.page}</div>
-            <div className="go" onClick={next}><img src={right} /></div>
+            <div onClick={next}><img src={right} /></div>
         </div>
     )
 }
