@@ -6,33 +6,17 @@ import left from "../../assets/svg/left.svg";
 
 function Pagination(props) {
     let navigate = useNavigate();
-    const [pages, setPage] = useState(parseInt(props.page));
-
-    function next() {
-        setPage(pages+1);
-        navigate(`/${props.route}/${pages}`);
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth',
-        });
-    }
-
-    function prev() {
-        if(pages > 0) {
-            setPage(pages-1);
-            navigate(`/${props.route}/${pages}`);
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth',
-            });
-        }
-    }
-
     return(
         <div className="pagination">
-            <div onClick={prev}><img src={left} /></div>
+            <div onClick={() => {navigate(`/${props.route}/${parseInt(props.page) > 1 ? parseInt(props.page) - 1 : parseInt(props.page)}`);window.scrollTo({
+                top: 0,
+                behavior: 'smooth',
+            });}}><img src={left} /></div>
             <div>{props.page}</div>
-            <div onClick={next}><img src={right} /></div>
+            <div onClick={() => {navigate(`/${props.route}/${parseInt(props.page)+1}`); window.scrollTo({
+                top: 0,
+                behavior: 'smooth',
+            });}}><img src={right} /></div>
         </div>
     )
 }
