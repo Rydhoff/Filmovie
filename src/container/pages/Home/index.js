@@ -1,3 +1,4 @@
+import Footer from "../../../components/Footer/Footer";
 import Hero from "../../../components/Hero/Hero";
 import Navbar from "../../../components/Navbar/Navbar";
 import Section from "../../../components/Section/Section";
@@ -10,6 +11,7 @@ function Home() {
             <Hero url={API.fetchTrending} />
             <Section title="Discover Movies" url={API.fetchMovie()} all="movies/1" type="movie" />
             <Section title="Discover TV" url={API.fetchTv()} all="tv/1" type="tv" />
+            <Footer />
         </div>
     )
 }

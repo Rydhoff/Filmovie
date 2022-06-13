@@ -6,6 +6,7 @@ import API from "../../../config/api";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom"
+import Footer from "../../../components/Footer/Footer";
 
 function Movies() {
     let { page } = useParams();
@@ -35,6 +36,7 @@ function Movies() {
             }
         </div>
         <Pagination route="movies" page={page} />
+        <Footer />
     </div>)
 }
 

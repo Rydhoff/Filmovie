@@ -1,7 +1,7 @@
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 1rem;
     width: 100%;
     position: fixed;
     background: linear-gradient(180deg, rgba(15,15,15,1) 0%, rgba(0,0,0,0) 85%);
@@ -10,7 +10,7 @@ nav {
 
 .logo {
     display: flex;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
 }
 
@@ -27,7 +27,7 @@ nav ul {
 }
 
 nav ul li {
-    padding-top: .3rem;
+    padding-top: .2rem;
     list-style: none;
     transition: .3s;
 }

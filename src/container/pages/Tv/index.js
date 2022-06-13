@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import noImage from "../../../assets/image/noimage.png";
+import Footer from "../../../components/Footer/Footer";
 
 function Tv() {
     let { page } = useParams();
@@ -43,6 +44,7 @@ function Tv() {
             }
         </div>
         <Pagination route="tv" page={page} />
+        <Footer />
     </div>)
 }
 
